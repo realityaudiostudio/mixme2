@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>
+		Creating Search Bar using HTML
+		CSS and Javascript
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- linking the stylesheet(CSS) -->
+    <style>
+       body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+	#searchbar{
+     align-items:center ; justify-content: center;
+        padding:15px;
+        border-radius: 10px;
+    }
+    
+    input[type=text] {
+        width: 50%;
+        -webkit-transition: width 0.15s ease-in-out;
+        transition: width 0.15s ease-in-out;
+     
+    }
+    
+    /* When the input field gets focus,
+            change its width to 100% */
+  button{background-color: black; color: white;border: none;border-radius: 10px; padding:10px}
+    
+    #list{
+        font-size: 15px;
+        text-align: center;
+        display: none;
+        list-style-type: none;
+        
+    }
+    #list a{text-decoration: none;}
+    .animals{
+    display: list-item;	
+    }
+    </style
+</head>
+
+<body>
+	<h1>Mix Me Search Engine</h1>
+	<!-- input tag -->
+	<input id="searchbar" onkeyup="search_animal()" type="text"
+		name="search" placeholder="Search musics.... ">
+        <button onclick="myFunction()">Click Me</button>
+
+	<!-- ordered list -->
+	<ul id='list'>
+		<li class="animals"><a href="https://realityaudiostudio.github.io/mixme2/sng2.html">Fourth Melody By Alan</a></li>
+		<li class="animals"><a href="https://realityaudiostudio.github.io/mixme2/sng1.html">Carol Pudding by Alan</a></li>
+		<li class="animals"><a href="https://realityaudiostudio.github.io/mixme2/sng3.html">Simply Me by Alan<</a>/li>
+		<li class="animals"><a href="https://realityaudiostudio.github.io/mixme2/sng5.html">Kurisin Chuvattil by Mariya</a></li>
+		<li class="animals"><a href="https://realityaudiostudio.github.io/mixme2/sng4.html">Unni Easho by Milan</a></li>
+		<li class="animals"><a href="https://realityaudiostudio.github.io/mixme2/sng7.html">Easho Nadha by Mariya</a></li>
+		<li class="animals"><a href="https://realityaudiostudio.github.io/mixme2/sng6.html">Yeshuvin Paithalam By Alona</a></li>
+		
+	</ul>
+	
+	<!-- linking javascript -->
+	<script>// JavaScript code
+function search_animal() {
+	let input = document.getElementById('searchbar').value
+	input=input.toLowerCase();
+	let x = document.getElementsByClassName('animals');
+	
+	for (i = 0; i < x.length; i++) {
+		if (!x[i].innerHTML.toLowerCase().includes(input)) {
+			x[i].style.display="none";
+		}
+		else {
+			x[i].style.display="list-item";				
+		}
+	}
+}
+</script>
+<script>function myFunction() {
+  var x = document.getElementById("list");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}</script>
+</body>
+
+</html>

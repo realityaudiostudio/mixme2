@@ -49,38 +49,57 @@
   transform: translate(-50%);
 }
 .logo {float: left;}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  border-radius: 30px;
-  box-shadow: 0px 6px 6px #888888;
-  height: 30px;
-  overflow: hidden;
-  background-color: #000000;
-  opacity:0.6;
+.overlay {font-family: 'Nunito Sans', sans-serif;
+  height: 0%;
+  width: 100%;
   position: fixed;
-  width:100%
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
 }
 
-li {
-  float: left;
-}
-
-li a {
-  display: inline-block;
-  color: white;
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
   text-align: center;
-  font-size: 12px;
-  font-family: 'Nunito', sans-serif;
-  padding-left: 16px;
-  padding-right: 5px;
-  padding-top: 1px;
-  text-decoration: none;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
-li a:hover {
-  background-color: #111;
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
 .subh {font-family: 'Nunito Sans', sans-serif;
 font-size: 20px;}
@@ -302,16 +321,19 @@ font-family: 'Roboto Mono', monospace;font-size: 11px;font-weight: bold;}
   </style>
 </head>
 <body>
-    <div style="width: 100%; height: 20px;"></div>
-    <div class="head" ><img src="img/logo.png"width="33" height="33"><img class="ic" src="img/icon.png" onclick="myFunction()" width="43" height="43" ></div>
-    <div style="width: 100%; height: 20px; background-color: white;"></div>
-    <div><ul id="ajs">
-        <li><a href="https://realityaudiostudio.github.io/">Home</a></li>
-        <li><a href="https://realityaudiostudio.github.io/release.html">Releases</a></li>
-        <li><a href="https://realityaudiostudio.github.io/art.html">Artists</a></li>
-        <li><a href="https://realityaudiostudio.github.io/games.html">Games</a></li>
-        <li><a href="#about">About</a></li>
-      </ul></div>
+  <div style="width: 100%; height: 20px;"></div>
+  <div class="head" ><img src="img/logo.png"width="33" height="33"><img class="ic" src="img/icon.png" onclick="openNav()" width="43" height="43" ></div>
+  <div style="width: 100%; height: 20px; background-color: white;"></div>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+<a href="https://realityaudiostudio.github.io/">Home</a>
+      <a href="https://realityaudiostudio.github.io/release.html">Releases</a>
+      <a href="https://realityaudiostudio.github.io/art.html">Artists</a>
+      <a href="https://realityaudiostudio.github.io/games.html">About</a>
+      <a href="https://realityaudiostudio.github.io/store.html">Store</a>
+    </div>
+  </div>
       
       <div style="width:100%;height:50px;"></div>
       <div class="container">
@@ -426,4 +448,13 @@ soundButton.innerHTML = audio.muted ? muteIcon : soundIcon;
 }
 
 soundButton.addEventListener('click', toggleSound); </script>
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+  </script>
 </body>

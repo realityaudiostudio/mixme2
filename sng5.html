@@ -4,15 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="img/logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3010195382608605"
      crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
@@ -35,149 +27,67 @@
 
 });</script>
   <style>
-      .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');     
   
   
-.ic{margin: 0;
-  position: absolute;
-  left: 50%;
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
+  body{font-family: 'Nunito', sans-serif;
+font-weight: 300;}
+/*animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;}
+            @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }*/
+  h2{height:8px;}
+.ico{display: flex;
+justify-content: space-between;padding: 5px;}
+.hp{padding:5px;}
+.adh{display: flex;justify-content: space-around;align-items: center; background-color: #262626;
+width: 90%;height: 104px;padding:6px;border-radius: 9px;color: #ffffff;font-size: 18px;font-weight:50;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin: auto;}
+.mnimg{background-image: url(img/uebg.png); background-size:cover;width: 100%;height: 100%;padding: 0;margin: 0;}
+.exp{ 
+color: #ffffff;
 }
-.logo {float: left;}
-.overlay {font-family: 'Nunito Sans', sans-serif;
-  height: 0%;
-  width: 100%;
+.plr{padding-left: 20px;}
+#overlay {
   position: fixed;
-  z-index: 1;
+  display: none;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-y: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
+  right: 0;
+  bottom: 0;
   align-items: center;
-  justify-content: center;
+ text-align: center;
+ color: white;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 2;
+  cursor: pointer;
+  padding-top: 80px;
+  font-size: 25px;
+  font-weight: 300;
 }
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-}.get a{text-decoration: none;color: white;}
-.subh {font-family: 'Nunito Sans', sans-serif;
-font-size: 20px;}
-div.example {
-      overflow: auto;
-      white-space: nowrap;
-    }
-    
-    div.example img {
-      display: inline-block;
-      color: white;
-      text-align: center;
-      padding-bottom: 2px;
-      padding-left: 14px;
-      text-decoration: none;
-    }    
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .example::-webkit-scrollbar {
-        display: none;
-    }
-    
-    /* Hide scrollbar for IE, Edge and Firefox */
-    .example {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
-    }
-    .dethead{font-family: 'Nunito Sans', sans-serif;font-size: 16px;font-weight: bold;  padding-left: 10px;
-  padding-right: 10px;}
-.detp{font-family: 'Nunito Sans', sans-serif;font-size: 11px;font-weight: lighter;  padding-left: 10px;
-  padding-right: 10px;}
-.det{text-align: left; padding-left: 10px;}
-.bg {
-  /* The image used */
-
-width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-.lr{padding-left: 10px;
-  padding-top: 10px;
-color: #000000;
-font-family: 'Roboto Mono', monospace;font-size: 11px;font-weight: bold;}
-.auds.des{text-align: left;}
-.info {
-  background-color: #f0f0f0;
-  border-left: 6px solid #2b2b2b;font-family: 'Nunito Sans', sans-serif;font-size: 11px;
-  padding: 4px 12px;
-}
-.get{color: white;background:#363535; width: fit-content;font-family: 'Nunito Sans', sans-serif;padding: 5px;}
-.container {
-  position: relative;
-  max-width: 800px; /* Maximum width */
-  margin: 0 auto; /* Center it */
-}
-
-.container .content {
-  position: absolute; /* Position the background text */
-  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-  color: #ffffff; /* Grey text */
-    height:6.4rem;
-    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#111);
-  width: 100%; /* Full width */
-}
-
 
    /* Audio playerinte code aan tto ith*/ 
 	.auds { 
-			padding: 5px;
-			margin: 0;
-		
+			padding: 5px;	
 			display: flex;
 			justify-content: center;
       align-items: center;
       position: fixed;
-  bottom: 0;
-  background-color: white;
+  bottom: 20;
+  margin: 0;
   width: 100%;
-  border-top: 2px solid rgb(0, 0, 0);
+  
+
 
 		}
         .audio-player {
@@ -317,145 +227,197 @@ font-family: 'Roboto Mono', monospace;font-size: 11px;font-weight: bold;}
   cursor: pointer;
   padding: 0;
 }
+.get a{text-decoration: none;color: white;}
     /* Audio Player kazhinjtto */
+
+    /* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
   </style>
 </head>
 <body>
-  <div style="width: 100%; height: 20px;"></div>
-  <div class="head" ><img src="img/logo.png"width="33" height="33"><img class="ic" src="img/icon.png" onclick="openNav()" width="43" height="43" ></div>
-  <div style="width: 100%; height: 20px; background-color: white;"></div>
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-<a href="https://realityaudiostudio.github.io/">Home</a>
+  <div class="w3-animate-opacity"><div class="mnimg"><!--bg aan ith-->
+    <div style="width: 100%; height: 20px;"></div>
+    <div class="ico"><img src="img/icon.png" style="width: 30px;height:30px;" onclick="openNav()"><img src="img/logo.svg" style="width: 33px;height:35px;"></div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="https://realityaudiostudio.github.io">Home</a>
       <a href="https://realityaudiostudio.github.io/release.html">Releases</a>
       <a href="https://realityaudiostudio.github.io/art.html">Artists</a>
       <a href="https://realityaudiostudio.github.io/games.html">About</a>
-      <a href="https://realityaudiostudio.github.io/store.html">Store</a>
-    </div>
+    </div>    <div style="width: 100%;height:250px;"></div>
+   <div class="exp"><div class="plr"><p style="font-size: 26px;height: 15px;font-weight: 500;">Unni Easho</p>
+   <p style="font-size:15px;font-weight:200;"><img src="https://img.icons8.com/material-outlined/12/ffffff/clock--v1.png"> 4 mins | <img src="https://img.icons8.com/ios/12/FFFFFF/headset.png"/>  2.1 stereo mix | <img src="https://img.icons8.com/ios-filled/12/FFFFFF/open-book.png"/>  Malayalam</p>
+  <p style="font-size:12px;font-weight:50;">On Music: Milan Martin Santo, Santo Jose, <br>Binu Thomas, Athul Jose Tom</p>
+<p>Behind The Work</p>
+<div style="background:#ffffff;width:40px;height:4px;"></div>
+<p style="font-weight: 200;font-size:12px;">Music : Milan Martin Santo</br>
+  Lyrics : Alan Jose Santo</br>
+  Scoring : Alan Jose Santo</br>
+DOP: Nidheesh J Martin</br></p>
+<div style="padding:5px;text-align:center;background:white;color:#262626;width: 80px;height: 30px;font-size: 15px;font-weight: 400;" onclick="on()">Download</div></div>
+<div class="auds"><div class="audio-player">
+  
+  <audio src="https://docs.google.com/uc?export=download&id=1i2I3X_5k_UnXTefE86KUuNpdcK4vEYt1"></audio>
+  <div class="controls">
+    <button class="player-button">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#ffffff">
+  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+</svg>
+    </button>
+    <input type="range" class="timeline" max="100" value="0">
+    <button class="sound-button">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#ffffff">
+  <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" />
+</svg>
+    </button>
   </div>
-      
-      <div style="width:100%;height:50px;"></div>
-      <div class="container">
-        <img src="img/kcori.png" alt="SimplyMe" style="width:100%;">
-        <div class="content">
-          <p class="dethead">Kurisin Chuvattil</p>
-          <p class="detp">Mariya Alphonse Jospeh</p>
-        </div>
-      </div>
-      <div class="lr">5 mins| 2.1 stereo mix| Malayalam</div>
-        <div class="auds"><div class="audio-player">
-  
-            <audio src="https://docs.google.com/uc?export=download&id=1eM-jwFDf3oDs2PPKoZ66JDsx9gfpuGDV"></audio>
-            <div class="controls">
-              <button class="player-button">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-          </svg>
-              </button>
-              <input type="range" class="timeline" max="100" value="0">
-              <button class="sound-button">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
-            <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" />
-          </svg>
-              </button>
-            </div>
-          </div></div><div class="des"><p class="dethead">About</p><p class="detp">Kurisin Chuvattil which is originally first composition by Alan Jose Santo but released after 3 years. The song conveys details about the crucifixion of jesus christ. This song can be generally used on Good Friday.</p>
-            <div class="info">
-            <p><strong>Music</strong> Alan Jose Santo</p>
-            <p><strong>Lyrics</strong> Alan Jose Santo</p>
-            <p><strong>Vocal</strong> Mariya Alphonse Joseph</p>
-            <p><strong>Scoring</strong> Alan Jose Santo</p>
-          </div>
-        </div>
-        <div class="get"><a href="https://drive.google.com/uc?export=download&id=1eM-jwFDf3oDs2PPKoZ66JDsx9gfpuGDV" download="alan">Download</a></div>
-    <!--randamathe-->
+</div></div>
+</div>
+  </div></div>
+  <!--over-->
+  <div id="overlay" onclick="off()">
+    <div class="w3-animate-zoom"> <h3>Download</h3>
+   <p>Lyrics</p>
+   <p>Original Soundtrack</p> 
+  </div>
+  </div>
+  <!--overkazhinj-->
+  <script>
+    const playerButton = document.querySelector('.player-button'),
+    audio = document.querySelector('audio'),
+    timeline = document.querySelector('.timeline'),
+    soundButton = document.querySelector('.sound-button'),
+    playIcon = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#ffffff">
+    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+    </svg>
+    `,
+    pauseIcon = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#ffffff">
+    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+    </svg>
+    `,
+    soundIcon = `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#ffffff">
+    <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" />
+    </svg>`,
+    muteIcon = `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#ffffff">
+    <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM12.293 7.293a1 1 0 011.414 0L15 8.586l1.293-1.293a1 1 0 111.414 1.414L16.414 10l1.293 1.293a1 1 0 01-1.414 1.414L15 11.414l-1.293 1.293a1 1 0 01-1.414-1.414L13.586 10l-1.293-1.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+    </svg>`;
     
-        <script> function myFunction() {
-
-  var x = document.getElementById("ajs");
-
-  if (x.style.display === "none") {
-
-    x.style.display = "block";
-
-  } else {
-
-    x.style.display = "none";
-
-  }
-
-} </script>
-<script>
-const playerButton = document.querySelector('.player-button'),
-audio = document.querySelector('audio'),
-timeline = document.querySelector('.timeline'),
-soundButton = document.querySelector('.sound-button'),
-playIcon = `
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
-<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-</svg>
-`,
-pauseIcon = `
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
-<path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
-</svg>
-`,
-soundIcon = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
-<path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" />
-</svg>`,
-muteIcon = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
-<path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM12.293 7.293a1 1 0 011.414 0L15 8.586l1.293-1.293a1 1 0 111.414 1.414L16.414 10l1.293 1.293a1 1 0 01-1.414 1.414L15 11.414l-1.293 1.293a1 1 0 01-1.414-1.414L13.586 10l-1.293-1.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-</svg>`;
-
-function toggleAudio () {
-if (audio.paused) {
-audio.play();
-playerButton.innerHTML = pauseIcon;
-} else {
-audio.pause();
-playerButton.innerHTML = playIcon;
-}
-}
-
-playerButton.addEventListener('click', toggleAudio);
-
-function changeTimelinePosition () {
-const percentagePosition = (100*audio.currentTime) / audio.duration;
-timeline.style.backgroundSize = `${percentagePosition}% 100%`;
-timeline.value = percentagePosition;
-}
-
-audio.ontimeupdate = changeTimelinePosition;
-
-function audioEnded () {
-playerButton.innerHTML = playIcon;
-}
-
-audio.onended = audioEnded;
-
-function changeSeek () {
-const time = (timeline.value * audio.duration) / 100;
-audio.currentTime = time;
-}
-
-timeline.addEventListener('change', changeSeek);
-
-function toggleSound () {
-audio.muted = !audio.muted;
-soundButton.innerHTML = audio.muted ? muteIcon : soundIcon;
-}
-
-soundButton.addEventListener('click', toggleSound); </script>
-<script>
-  function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-  }
-  
-  function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-  }
-  </script>
+    function toggleAudio () {
+    if (audio.paused) {
+    audio.play();
+    playerButton.innerHTML = pauseIcon;
+    } else {
+    audio.pause();
+    playerButton.innerHTML = playIcon;
+    }
+    }
+    
+    playerButton.addEventListener('click', toggleAudio);
+    
+    function changeTimelinePosition () {
+    const percentagePosition = (100*audio.currentTime) / audio.duration;
+    timeline.style.backgroundSize = `${percentagePosition}% 100%`;
+    timeline.value = percentagePosition;
+    }
+    
+    audio.ontimeupdate = changeTimelinePosition;
+    
+    function audioEnded () {
+    playerButton.innerHTML = playIcon;
+    }
+    
+    audio.onended = audioEnded;
+    
+    function changeSeek () {
+    const time = (timeline.value * audio.duration) / 100;
+    audio.currentTime = time;
+    }
+    
+    timeline.addEventListener('change', changeSeek);
+    
+    function toggleSound () {
+    audio.muted = !audio.muted;
+    soundButton.innerHTML = audio.muted ? muteIcon : soundIcon;
+    }
+    
+    soundButton.addEventListener('click', toggleSound); </script>
+     <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+      </script>
+      <script>
+        function on() {
+          document.getElementById("overlay").style.display = "block";
+        }
+        
+        function off() {
+          document.getElementById("overlay").style.display = "none";
+        }
+        </script>
+        <script>/* Set the width of the side navigation to 250px */
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+          
+          /* Set the width of the side navigation to 0 */
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          </script>
 </body>
